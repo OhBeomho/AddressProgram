@@ -239,8 +239,16 @@ public class Main extends Application {
 		tableData.add(editingIndex, editedData);
 		fullTableData.remove(editingIndex);
 		fullTableData.add(editingIndex, editedData);
-
+		
 		editingIndex = 0;
+
+		try (BufferedWriter writer = new BufferedWriter(new FileWriter(Person.PERSONS_FILE))) {
+			for (Person p : persons) writer.write(p.getName() + "/" + p.getAddress() + "/" + p.getTel() + "/" + p.getAge() + "\n");
+
+			writer.flush();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	private void remove() {
