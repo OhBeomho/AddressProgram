@@ -1,41 +1,45 @@
-.button {
+Button {
 	-fx-background-color: white;
 	-fx-border-color: black;
 }
 
-.button:hover {
+Button:hover {
 	-fx-background-color: lightgray;
 }
 
-.button:pressed {
+Button:pressed {
 	-fx-background-color: gray;
 	-fx-border-color: gray;
 }
 
-.text-field {
+TextField {
 	-fx-background-color: white;
 	-fx-border-color: rgb(100, 100, 255);
 }
 
-.text-field:focused {
+TextField:focused {
 	-fx-border-color: rgb(70, 130, 200);
 }
 
-.table-view {
+TableView {
 	-fx-background-color: white;
 	-fx-border-color: black;
 }
 
-.choice-box {
+ChoiceBox {
 	-fx-background-color: white;
 	-fx-border-color: black;
 }
 
-.choice-box:hover {
+ChoiceBox:hover {
 	-fx-background-color: lightgray;
 }
 
-.choice-box:pressed {
+ChoiceBox:pressed {
 	-fx-background-color: gray;
 	-fx-border-color: gray;
+}
+
+StackPane {
+	-fx-background-color: white;
 }
